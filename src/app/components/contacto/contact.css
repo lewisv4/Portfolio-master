@@ -1,0 +1,213 @@
+.contactContainer {
+    height: 50vh;
+    position: relative;
+    padding: 2% 10%;
+    overflow: hidden;
+    color: #eee;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url(../../../../public/contact/bgcontact.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contactContainer article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contactContainer h1 {
+    margin-bottom: 0;
+    font-size: 3.5vw;
+    line-height: 1;
+}
+
+.contactContainer p {
+    font-size: 1.2vw;
+    margin-top: 0;
+    color: #aaa;
+}
+
+.textAndLinks .dataContact {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1%;
+    font-size: .95vw;
+    color: #eee;
+}
+
+.textAndLinks .dataContact span {
+    margin-right: 2%;
+    font-size: .85vw;
+    width: 2vw;
+    height: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #222;
+    padding: 2px;
+    color: #09f;
+    border-radius: 50%;
+}
+
+.redes {
+    margin-top: 4%;
+    gap: 10px;
+    display: flex;
+}
+
+.redes span {
+    margin-right: 1%;
+    font-size: .8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.redes a {
+    text-decoration: none;
+    color: #eee;
+    opacity: .7;
+    display: flex;
+    align-items: center;
+    width: 35px;
+    border-radius: 30px;
+    height: 35px;
+    background: linear-gradient(45deg, rgb(0, 8, 80), rgb(0, 9, 131));
+    transition: .2s;
+}
+
+.redes a:hover {
+    opacity: 1;
+}
+
+.contactContainer section {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.contactContainer .textAndLinks,
+.contactContainer .formContact {
+    width: 50%;
+}
+
+.contactContainer .formContact {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.formContact * {
+    padding: 0;
+    margin: 0;
+}
+
+.formContact form {
+    display: flex;
+    width: 75%;
+    padding: 4% 2%;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 5px;
+    background: linear-gradient(to right, #04102e, #04102e, #04102e, #001d3f, #001d3f);
+}
+
+.contactContainer form input,
+.contactContainer form textarea {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 4%;
+    background: linear-gradient(to bottom, #002046, #071a4b);
+    border: none;
+    color: white;
+    outline: none;
+    border-radius: 10px;
+    padding: 10px 10px;
+    border: solid 2px #071a4b;
+}
+
+.contactContainer form input:focus,
+.contactContainer form textarea:focus {
+    border-color: rgb(0, 38, 143);
+}
+
+.contactContainer textarea {
+    resize: none;
+    min-width: 90%;
+    max-width: 90%;
+    min-height: 10vh;
+    max-height: 10vh;
+}
+
+.contactContainer form button {
+    background-color: #09f;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: .2s;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 4%;
+    color: #fff;
+}
+
+.contactContainer form button:hover {
+    background-color: rgb(53, 174, 255);
+}
+
+@media (max-width: 729px) {
+    .contactContainer {
+        height: fit-content;
+    }
+
+    .contactContainer section {
+        display: block;
+    }
+
+    .contactContainer section article {
+        width: 80vw !important;
+        align-items: center;
+    }
+
+    .contactContainer .textAndLinks {
+        text-align: center;
+    }
+
+    .contactContainer .formContact {
+        margin-top: 10%;
+        align-items: center;
+        margin-bottom: 10%;
+    }
+
+    .contactContainer .formContact form {
+        width: 80vw;
+    }
+
+}
+
+@media (max-width: 1000px) {
+    .contactContainer h1 {
+        font-size: 5vh;
+    }
+
+    .contactContainer .textAndLinks .paragraph {
+        font-size: 2vh;
+    }
+
+    .contactContainer .dataContact {
+        font-size: 1.7vh;
+    }
+    .contactContainer .dataContact span {
+        font-size: 1.3vh;
+        background-color: transparent;
+    }
+
+}

@@ -1,0 +1,28 @@
+.projectsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 60vw;
+    height: fit-content;
+    margin-bottom: 15%;
+}
+
+.projectsContainer * {
+    margin: 0;
+    padding: 0;
+}
+
+.projectsContainer h2 {
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+.projectsContainer.dark {
+    color: #eee;
+}
+
+.projectsContainer.light {
+    color: #222;
+}

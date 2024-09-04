@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-attachment: fixed;
+  overflow-x: hidden;
+  background-color: #171717;
+  background: linear-gradient(to right, #04102e, #04102e, #04102e, #04102e, #001d3f);
+}
+
+html,
+body {
+  width: 100vw;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+  width: 15px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #222;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #ccc;
+}
+
+.bodyLight {
+  background-image: repeating-linear-gradient(45deg, rgb(255, 255, 255) 0px, rgb(255, 255, 255) 10px, transparent 10px, transparent 11px), repeating-linear-gradient(135deg, rgb(255, 255, 255) 0px, rgb(255, 255, 255) 10px, transparent 10px, transparent 11px), linear-gradient(90deg, hsl(256, 7%, 84%), hsl(256, 7%, 84%));
+} 

@@ -1,0 +1,101 @@
+.patherNav {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    z-index: 1000;
+}
+
+.patherNav * {
+    padding: 0;
+    margin: 0;
+}
+
+.navContainer {
+    border-radius: 30px;
+    margin: 0 auto;
+    padding: 15px;
+    width: 40vw;
+}
+
+.navContainer ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.navContainer ul li {
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+    font-size: .85rem;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.navContainer.dark {
+    animation: blurDark linear both;
+    animation-timeline: scroll();
+    animation-range: 0 500px;
+}
+
+.navContainer.light {
+    animation: blurLight linear both;
+    animation-timeline: scroll();
+    color: #222;
+    animation-range: 0 500px;
+}
+
+@keyframes blurDark {
+    to {
+        margin-top: 10px;
+        opacity: .4;
+        background-color: rgba(0, 0, 0, 0.45);
+        backdrop-filter: blur(30px);
+        transition: .3s;
+    }
+}
+
+@keyframes blurLight {
+    to {
+        margin-top: 10px;
+        color: #eee;
+        opacity: .4;
+        background-color: rgba(95, 95, 95, 0.55);
+        backdrop-filter: blur(30px);
+    }
+}
+
+.navContainer.dark {
+    color: #eee;
+}
+
+.navContainer:hover {
+    opacity: 1 !important;
+}
+
+.navContainer.dark ul li:hover {
+    color: white;
+}
+
+@media (max-width: 729px) {
+    .patherNav {
+        margin: 0 auto;
+        display: block;
+    }
+    .patherNav .navContainer {
+        width: 80%;
+        padding: 10px 15px;
+    }
+    .patherNav .navContainer * {
+        margin: 0;
+        padding: 0;
+    }
+    .patherNav .navContainer ul {
+        justify-content: space-evenly;
+    }
+    .navContainer ul li {
+        font-size: 12px;
+    }
+}

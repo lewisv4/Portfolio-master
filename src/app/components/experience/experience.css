@@ -1,0 +1,35 @@
+.experienceContainer {
+    width: 40vw;
+    margin: 0 auto;
+    color: white;
+    margin-bottom: 10%  ;
+}
+
+.experienceContainer ol {
+    padding-left: 0;
+    list-style: none;
+}
+
+.experienceContainer h2 {
+    margin-bottom: 5%;
+    margin-left: -0.750rem;
+    font-size: 1.5rem;  
+}
+
+.experienceContainer h2 i {
+    opacity: .7;
+    margin-right: 2%;
+    padding-left: 0;
+}
+
+.experienceContainer.light h2 {
+    color: #333; 
+}
+
+@media (max-width: 729px) {
+    .experienceContainer {
+        width:  80vw;
+        display: flex;
+        flex-direction: column;
+    }
+}

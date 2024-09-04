@@ -1,0 +1,108 @@
+.patherAbout {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%);
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%);
+    background-color: rgba(0, 0, 0, 0.15);
+    padding: 2% 10%;
+    padding-bottom: 10%;
+    color: #eee;
+    margin-bottom: 10%;
+}
+
+.patherAbout section {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.patherAbout section .about {
+    width: 60%;
+}
+
+.patherAbout section .education {
+    width: 40%;
+}
+
+.patherAbout .education .jobFather {
+    width: 100%;
+    height: 5vh;
+    margin-bottom: -5%;
+    margin-left: 25%;
+}
+
+.patherAbout .education h3 {
+    font-size: .8rem;
+    display: flex;
+    margin-top: 3%;
+}
+
+.patherAbout .about h2 {
+    font-size: 1.5rem;
+}
+
+.patherAbout .about p {
+    font-size: 1vw;
+    opacity: .7;
+    width: 100%;
+    text-wrap: pretty;
+}
+
+.patherAbout.light {
+    background-color: rgba(0, 0, 0, .9);
+}
+
+.patherAbout.light .education .verticalLine {
+    background-color: rgb(163, 218, 255);
+}
+
+.patherAbout.patherAbout.light .education h3 {
+    color: #ddd;
+}
+
+.patherAbout.patherAbout.light .education p {
+    color: #aaa;
+}
+
+@media (max-width: 729px) {
+    .patherAbout {
+        margin-top: 15vh;
+        height: 100vh;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        padding-bottom: 5%;
+        padding-top: 10%;
+    }
+
+    .patherAbout section {
+        flex-direction: column;
+    }
+
+    .patherAbout section article {
+        width: 80% !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .patherAbout .about p {
+        text-align: center;
+    }
+
+    .patherAbout .education {
+        margin-top: 15%;
+    }
+
+    .patherAbout .education .jobFather {
+        margin-left: 0;
+        height: 10vh;
+    }
+}
+
+@media(max-width:1000px) {
+    .patherAbout section article.about p {
+        font-size: 1.8vh;
+    }
+    .patherAbout .jobFather p {
+        font-size: 2vh;
+    }
+}

@@ -1,0 +1,55 @@
+.footer {
+    color: #ccc;
+    text-align: center;
+    font-weight: 100;
+    padding: 10px;
+    margin-bottom: 0;
+    background-color: #051725;
+}
+
+.footer a {
+    color: #ccc;
+    transition: .2s;
+    font-size: 1.2rem;
+}
+
+.footer a:hover {
+    color: #09f;
+}
+
+
+.footer a:first-child, 
+.footer a:nth-child(2),
+.footer .lastIcon {
+    margin-right: 1%;
+    margin-left: 1%;
+}
+
+.footer p {
+    color: #aaa;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.fatherFooter .light {
+    background-color: white;
+}
+
+.fatherFooter .light p {
+    color: #222;
+}
+
+.fatherFooter .light a {
+    color: #222;
+    transition: .2s;
+}
+
+.fatherFooter .light a:hover {
+    color: #09f;
+}
+
+@media (max-width:729px){
+    .footer p {
+        font-size: .7rem;
+    }    
+}
