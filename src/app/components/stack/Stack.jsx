@@ -13,6 +13,20 @@ import nextjsdark from '../../../../public/stackImages/nextjsdark.svg';
 import sequelize from '../../../../public/stackImages/sequelize.svg';
 import tailwind from '../../../../public/stackImages/tailwind.svg';
 import redux from '../../../../public/stackImages/redux.svg';
+import Angular from '../../../../public/stackImages/Angular.svg';
+import java from '../../../../public/stackImages/java.svg';
+import jquery from '../../../../public/stackImages/jquery.png';
+import Microsoft_Power_Apps from '../../../../public/stackImages/Microsoft_Power_Apps.png';
+import Microsoft_Power_Automate from '../../../../public/stackImages/Microsoft_Power_Automate.png';
+import Power_BI_Logo from '../../../../public/stackImages/Power_BI_Logo.png';
+import springboot from '../../../../public/stackImages/springboot.png';
+import Typescript from '../../../../public/stackImages/Typescript.png';
+import Bootstrap from '../../../../public/stackImages/Bootstrap.png';
+import MySQL from '../../../../public/stackImages/MySQL.png';
+import NET from '../../../../public/stackImages/NET.png';
+import PHP from '../../../../public/stackImages/PHP.svg';
+import oracle from '../../../../public/stackImages/oracle.png';
+import microsoft_sql_server from '../../../../public/stackImages/microsoft_sql_server.svg';
 import git from '../../../../public/stackImages/git.svg';
 import github from '../../../../public/stackImages/github.svg';
 
@@ -20,62 +34,50 @@ import github from '../../../../public/stackImages/github.svg';
 const Stack = () => {
 
   const { theme } = useStoreTheme();
+  const techList = [
+    { name: "Javascript", src: js },
+    { name: "c", src: c },
+    { name: "React js", src: react },
+    { name: "HTML5", src: html },
+    { name: "CSS3", src: css },
+    { name: "Node js", src: node },
+    { name: "Next js", src: nextjs },
+    { name: "Sequelize", src: sequelize },
+    { name: "Tailwind", src: tailwind },
+    { name: "Redux", src: redux },
+    { name: "Angular", src: Angular },
+    { name: "Java", src: java },
+    { name: "Jquery", src: jquery },
+    { name: "Microsoft Power Apps", src: Microsoft_Power_Apps },
+    { name: "Microsoft Power Automate", src: Microsoft_Power_Automate },
+    { name: "Power BI Logo", src: Power_BI_Logo },
+    { name: "Springboot", src: springboot },
+    { name: "Typescript", src: Typescript },
+    { name: "Bootstrap", src: Bootstrap },
+    { name: "MySQL", src: MySQL },
+    { name: ".NET", src: NET },
+    { name: "PHP", src: PHP },
+    { name: "oracle", src: oracle },
+    { name: "microsoft sql server", src: microsoft_sql_server },
+    { name: "Git", src: git },
+    { name: "Github", src: github },
+
+  ];
+
 
   return (
     <div className={`stackContainer ${theme}`} >
       <h2>Stack</h2>
       <div className="stackGrid">
-        <div className="techContainer">
-          <Image src={js} alt='Javascript' width={50} height={50} />
-          <p>Javascript</p>
-        </div>
-        <div className="techContainer">
-          <Image src={c} alt='C' width={50} height={50} />
-          <p>C</p>
-        </div>
-        <div className="techContainer">
-          <Image src={react} alt='React js' width={50} height={50} />
-          <p>React js</p>
-        </div>
-        <div className="techContainer">
-          <Image src={html} alt='HTML5' width={50} height={50} />
-          <p>HTML5</p>
-        </div>
-        <div className="techContainer">
-          <Image src={css} alt='CSS3' width={50} height={50} />
-          <p>CSS3</p>
-        </div>
-        <div className="techContainer">
-          <Image src={node} alt='Node js' width={50} height={50} />
-          <p>Node js</p>
-        </div>
-        <div className="techContainer">
-          <Image src={theme === "dark" ? nextjs : nextjsdark} alt='Next js' width={50} height={50} />
-          <p>Next js</p>
-        </div>
-        <div className="techContainer">
-          <Image src={sequelize} alt='Sequelize' width={50} height={50} />
-          <p>Sequelize</p>
-        </div>
-        <div className="techContainer">
-          <Image src={tailwind} alt='Tailwind' width={50} height={50} />
-          <p>Tailwind</p>
-        </div>
-        <div className="techContainer">
-          <Image src={redux} alt='Redux' width={50} height={50} />
-          <p>Redux</p>
-        </div>
-        <div className="techContainer">
-          <Image src={git} alt='Git' width={50} height={50} />
-          <p>Git</p>
-        </div>
-        <div className="techContainer">
-          <Image src={github} alt='Github' width={50} height={50} />
-          <p>Github</p>
-        </div>
+        {techList.map((tech, index) => (
+          <div className="techContainer" key={index}>
+            <Image src={tech.src} alt={tech.name} width={50} height={50} />
+            <p>{tech.name}</p>
+          </div>
+        ))}
       </div>
     </div>
-  )
+  );
 }
 
 export default Stack

@@ -146,25 +146,25 @@ const Contact = () => {
           <div>
             <p className='dataContact'>
               <span><i className="lastIcon  fa-solid fa-envelope"></i></span>
-              martinsdiego0513@outlook.es
+              lewisv4re@hotmail.com
             </p>
             <p className='dataContact'>
               <span><i className="lastIcon  fa-solid fa-location-dot"></i></span>
-              Buenos Aires, Argentina
+              Cali, Colombia
             </p>
           </div>
           <div className='redes'>
-            <Link href='https://www.linkedin.com/in/diego-martins-563954278/' target='_BLANK' >
+            <Link href='https://www.linkedin.com/in/luis-carlos-rodriguez-a885a61a6/' target='_BLANK' >
               <span>
                 <i className="fa-brands fa-linkedin"></i>
               </span>
             </Link>
-            <Link href='https://github.com/MartinsDiego17' target='_BLANK'>
+            <Link href='https://github.com/lewisv4' target='_BLANK'>
               <span>
                 <i className="fa-brands fa-github"></i>
               </span>
             </Link>
-            <Link href='mailto:martinsdiego0513@outlook.es'>
+            <Link href='mailto:lewisv4re@hotmail.com'>
               <span>
                 <i className="lastIcon  fa-solid fa-envelope"></i>
               </span>
