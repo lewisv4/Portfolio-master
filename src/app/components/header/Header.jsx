@@ -40,6 +40,7 @@ const Header = () => {
                         <li>{inicio}</li>
                         <li>{acerca}</li>
                         <li>{proyectos}</li>
+                        <li>{contacto}</li>
                         <li onClick={fnChangeTheme}><MdOutlineWbSunny /></li>
                         <li
                             className='lenguaje'
