@@ -39,15 +39,19 @@ const Home = () => {
 
   return (
     <>
-      <div className="pageContent">
+      <div id="patherPresentation" className="pageSection">
         <Presentation />
-        <Experience />
-        <About />
-        <Stack />
-        <Projects />
-        <Contact />
-        <Footer />
       </div>
+      <div id="patherAbout" className="pageSection">
+        <About />
+      </div>
+      <div id="projectsContainer" className="pageSection">
+        <Projects />
+      </div>
+      <div id="contactContainer" className="pageSection">
+        <Contact />
+      </div>
+      <Footer />
     </>
   );
       }

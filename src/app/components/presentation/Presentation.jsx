@@ -25,13 +25,13 @@ const Presentation = () => {
 
     async function downloadCv() {
         try {
-            const response = await fetch('/CV_Luis_C_Rodriguez.pdf');
+            const response = await fetch('/LUIS-RODRIGUEZ-CV.pdf');
             const fileData = await response.blob();
 
             const link = document.createElement('a');
             const fileUrl = URL.createObjectURL(fileData);
             link.href = fileUrl;
-            link.download = 'CV_Luis_C_Rodriguez.pdf';
+            link.download = 'LUIS-RODRIGUEZ-CV.pdf';
             link.click();
             URL.revokeObjectURL(fileUrl);
         } catch (error) {
@@ -40,7 +40,7 @@ const Presentation = () => {
     }
 
     const handlePreview = () => {
-        window.open("file:///C:/Users/test/OneDrive/Escritorio/Curriculums/CV_Luis_C_Rodriguez.pdf");
+        window.open("https://lewisv4.github.io/Curriculum-pages/", "_blank");
     }
 
     return (
