@@ -16,9 +16,9 @@ const Presentation = () => {
 
     const saludo = currentLenguaje === "es" ? "Hola, mi nombre es" : "Hello, my name is";
     const parrafo = currentLenguaje === "es"
-        ? 'Apasionado del desarrollo de software con inclinación hacia el desarrollo web'
+        ? 'Apasionado del desarrollo de software con inclinación hacia el desarrollo FullStack'
 
-        : 'Passionate about software development with a focus on web development';
+        : 'Passionate about software development with a focus on FullStack development';
     const descarga = currentLenguaje === "es" ? "Curriculum" : "Curriculum";
     const vistaPrevia = currentLenguaje === "es" ? "Vista previa" : "Preview";
     const openToWork = currentLenguaje === "es" ? "Disponible para trabajar" : "Available to work";
