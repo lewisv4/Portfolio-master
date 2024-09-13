@@ -7,7 +7,6 @@
         opacity: 0;
         transform: translateX(-100%);
     }
-
     100% {
         opacity: 1;
         transform: translateX(0);
@@ -19,7 +18,6 @@
         opacity: 0;
         transform: translateX(100%);
     }
-
     100% {
         opacity: 1;
         transform: translateX(0);
@@ -121,89 +119,43 @@
 }
 
 @keyframes changeBorderRadius {
-
-    0%,
-    100% {
-        /* Comentario: Estado inicial y final */
+    0%, 100% {
         border-radius: 48% 52% 55% 45% / 31% 48% 52% 69%;
     }
-
     25% {
-        /* Comentario: Primer conjunto aleatorio */
         border-radius: 50% 50% 72% 28% / 48% 56% 44% 52%;
     }
-
     50% {
-        /* Comentario: Segundo conjunto aleatorio */
         border-radius: 57% 43% 72% 28% / 33% 74% 26% 67%;
     }
-
     75% {
-        /* Comentario: Tercer conjunto aleatorio */
         border-radius: 50% 50% 72% 28% / 48% 56% 44% 52%;
     }
-
     30% {
-        /* Comentario: Cuarto conjunto aleatorio */
         border-radius: 60% 40% 55% 45% / 25% 65% 35% 75%;
     }
-
     60% {
-        /* Comentario: Quinto conjunto aleatorio */
         border-radius: 40% 60% 50% 50% / 60% 40% 55% 45%;
     }
-
     90% {
-        /* Comentario: Sexto conjunto aleatorio */
         border-radius: 55% 45% 40% 60% / 75% 25% 65% 35%;
     }
-
     15% {
-        /* Comentario: Séptimo conjunto aleatorio */
         border-radius: 65% 35% 50% 50% / 40% 60% 50% 50%;
     }
 }
 
-.patherPresentation .light h1 {
-    color: #222;
-}
-
-.patherPresentation .light p {
-    color: black;
-}
-
-.patherPresentation .light a .links {
-    color: #0874c5;
-    transition: .2s;
-}
-
-.patherPresentation .light a .links:hover {
-    color: #0e3b5d;
-}
-
 @media (max-width: 729px) {
-
-    .presentationContainer .openAndRedes {
-        margin-top: 5vh;
-    }
-
-    .presentationContainer .openAndRedes .textRed {
-        display: none;
-    }
-
     .presentationContainer {
         margin-top: 35% !important;
     }
-
     .presentationContainer .namePresentation h1 {
         font-size: 3.5rem;
     }
-
     .presentationContainer .namePresentation h2 {
         font-size: 1.2rem;
         margin-top: 2%;
     }
-
     .presentationContainer .namePresentation p {
         font-size: .9rem;
         text-align: center;
@@ -211,233 +163,74 @@
         margin-top: 2%;
         margin-bottom: 2%;
     }
-
     .presentationContainer .detailsPresentation {
         display: block;
     }
-
     .patherPresentation .detailsPresentation button {
         width: 100%;
         margin: 0 auto;
         margin-top: 2%;
         margin-bottom: 5%;
     }
-
     .presentationContainer {
         display: block;
     }
-
     .presentationContainer .namePresentation {
         width: 100%;
         text-align: center;
     }
-
     .presentationContainer .imagePresentation {
         display: none;
     }
 }
 
 @media (max-width: 1000px) {
-
     .presentationContainer {
         margin-top: 15%;
     }
-
     .presentationContainer h1 {
         font-size: 3.5rem;
     }
-
     .presentationContainer h2 {
         font-size: 1.3rem;
     }
-
     .presentationContainer .namePresentation p {
         width: 100%;
         font-size: .8rem;
     }
-
     .presentationContainer .imagePresentation img {
         border: solid 5px #09f;
     }
-
 }
 
-@media (max-width:1439px) {
-    .presentationContainer .imagePresentation img {
-        width: 65%;
-        height: 65%;
-    }
-}
-
-@media (min-width:1600px) {
+@media (min-width: 1600px) {
     .presentationContainer h1 {
         font-size: 5rem;
     }
-
     .presentationContainer h2 {
         font-size: 1.7rem;
     }
-
     .presentationContainer .namePresentation p {
         font-size: 1rem;
     }
-
     .presentationContainer .imagePresentation img {
         width: 70%;
         height: 70%;
     }
-
-    .presentationContainer .detailsPresentation button {
-        padding: 20px 35px;
-    }
-
-    .presentationContainer .detailsPresentation a {
-        font-size: 28px;
-    }
 }
 
-@media (min-width:1750px) {
-
+@media (min-width: 1750px) {
     .presentationContainer h1 {
         font-size: 6rem;
     }
-
     .presentationContainer h2 {
         font-size: 2rem;
     }
-
     .presentationContainer .namePresentation p {
         font-size: 1.2rem;
     }
-
     .presentationContainer .imagePresentation img {
         width: 65%;
         height: 65%;
-    }
-
-    .presentationContainer .detailsPresentation button {
-        padding: 23px 40px;
-    }
-
-    .presentationContainer .detailsPresentation a {
-        font-size: 32px;
-    }
-
-}
-
-.mensajeSaludo {
-    font-size: 1.5rem;
-}
-
-.namePresentation {
-    font-size: 2.5rem;
-    animation: textAnimation .8s ease !important;
-}
-
-.imagePresentation {
-    animation: imgAnimation .8s ease !important;
-}
-
-.patherPresentation .iconoCv {
-    padding-left: 4%;
-    opacity: .8;
-}
-
-.patherPresentation .buttonPreview {
-    margin-left: 2%;
-}
-
-.patherPresentation button#light {
-    background-color: #333;
-}
-
-.patherPresentation button#light:hover {
-    background-color: #222;
-}
-
-.patherPresentation button#light.buttonPreview {
-    background-color: #ccc;
-    color: #222;
-}
-
-.patherPresentation button#light.buttonPreview:hover {
-    background-color: #ccc;
-    background-color: #ddd;
-}
-
-.patherPresentation button#dark.buttonPreview:hover {
-    border-color: transparent;
-    background-color: rgba(42, 167, 250, 0.4);
-}
-
-.patherPresentation button#dark.buttonPreview {
-    background-color: transparent;
-    border-color: rgba(42, 167, 250, 0.6);
-}
-
-.presentationContainer h6 {
-    background-color: rgb(185, 227, 255);
-    color: #0874c5;
-    font-size: .9vw;
-    margin: 0;
-    height: 1.4rem;
-    padding: 0 8px;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-}
-
-.openAndRedes {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 10px;
-}
-
-.openAndRedes button {
-    width: fit-content;
-    padding: 3px 10px;
-    display: flex;
-    align-items: center;
-    border-radius: 50px;
-    background-color: #222;
-}
-
-.presentationContainer a {
-    display: flex;
-    text-decoration: none;
-    align-items: center;
-}
-
-.presentationContainer a .links {
-    margin-right: .5vw !important;
-}
-
-.presentationContainer a span {
-    padding-right: .3vw;
-    font-size: .7rem;
-}
-
-.light .openAndRedes button {
-    background-color: #ddd;
-}
-
-.light .openAndRedes button:hover {
-    background-color: #ccc;
-}
-
-.light .openAndRedes button * {
-    color: #222;
-}
-
-@media (max-width: 1000px) {
-    .openAndRedes {
-        justify-content: center;
-    }
-    .openAndRedes h6 {
-        font-size: 12px;
-    }
-    .openAndRedes button {
-        padding: 5px;
     }
 }
