@@ -37,7 +37,9 @@ const Header = () => {
   };
 
   const inicio = currentLenguaje === 'es' ? 'Inicio' : 'Home';
+  const experiencia = currentLenguaje === 'es' ? 'Experiencia' : 'Experience';
   const acerca = currentLenguaje === 'es' ? 'Acerca de mí' : 'About me';
+  const stack = currentLenguaje === 'es' ? 'Stack' : 'Stack';
   const proyectos = currentLenguaje === 'es' ? 'Proyectos' : 'Projects';
   const contacto = currentLenguaje === 'es' ? 'Contacto' : 'Contact';
 
@@ -47,7 +49,7 @@ const Header = () => {
         <ul>
           <li className={getClassName('patherPresentation')} onClick={() => handleScroll('patherPresentation')}>{inicio}</li>
           <li className={getClassName('patherAbout')} onClick={() => handleScroll('patherAbout')}>{acerca}</li>
-          <li className={getClassName('experienceContainer')} onClick={() => handleScroll('experienceContainer')}>{proyectos}</li>
+          <li className={getClassName('experienceContainer')} onClick={() => handleScroll('experienceContainer')}>{experiencia}</li>
           <li className={getClassName('stackContainer')} onClick={() => handleScroll('stackContainer')}>{contacto}</li>
           <li className={getClassName('projectsContainer')} onClick={() => handleScroll('projectsContainer')}>{proyectos}</li>
           <li className={getClassName('contactContainer')} onClick={() => handleScroll('contactContainer')}>{contacto}</li>
