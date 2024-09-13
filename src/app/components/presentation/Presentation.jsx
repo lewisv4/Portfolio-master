@@ -50,6 +50,9 @@ const Presentation = () => {
                     <h1><span className='mensajeSaludo' >{saludo}</span><br />Luis Carlos Rodriguez</h1>
                     <h2>{text}</h2>
                     <p>{parrafo}</p>
+                    <p>+57 3502032217</p>
+                    <p>+57 3122401377</p>
+                    
                     <div className='openAndRedes' >
                         <h6>{openToWork}</h6>
                         <button>

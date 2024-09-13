@@ -45,6 +45,12 @@ const Home = () => {
       <div id="patherAbout" className="pageSection">
         <About />
       </div>
+      <div id="patherAbout" className="pageSection">
+        <Experience />
+      </div>
+      <div id="projectsContainer" className="pageSection">
+        <Stack />
+      </div>
       <div id="projectsContainer" className="pageSection">
         <Projects />
       </div>
