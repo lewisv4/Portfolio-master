@@ -380,7 +380,7 @@
     color: #0874c5;
     font-size: .9vw;
     margin: 0;
-    height: 1.4rem;
+    height: 2rem;
     padding: 0 8px;
     border-radius: 5px;
     display: flex;
@@ -392,10 +392,11 @@
     align-items: center;
     justify-content: flex-start;
     gap: 10px;
+    flex-wrap: wrap;
 }
 
 .openAndRedes button {
-    width: fit-content;
+    width: max-content;
     padding: 3px 10px;
     display: flex;
     align-items: center;
