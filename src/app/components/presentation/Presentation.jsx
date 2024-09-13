@@ -44,65 +44,61 @@ const Presentation = () => {
     }
 
     return (
-        <div className='patherPresentation' >
-            <section className={'presentationContainer ' + theme} >
-                <article className='namePresentation' >
-                    <h1><span className='mensajeSaludo' >{saludo}</span><br />Luis Carlos Rodriguez</h1>
-                    <h2>{text}</h2>
-                    <p>{parrafo}</p>
-                    
-                    
-                    <div className='openAndRedes' >
-                        <h6>{openToWork}</h6>
-
-                        <button>
-                            <Link href='https://api.whatsapp.com/send?phone=+573122401377' target='_BLANK' >
-                                <i className="fa-brands fa-whatsapp links "></i><span className='textRed' >+57 312 240 1377</span>
-                            </Link>
-                        </button>
-                        <button>
-                            <Link href='https://api.whatsapp.com/send?phone=+573502032217' target='_BLANK' >
-                                <i className="fa-brands fa-whatsapp links "></i><span className='textRed' >+57 350 203 2217</span>
-                            </Link>
-                        </button>
-                        
-                        <button>
-                            <Link href='https://www.linkedin.com/in/luis-carlos-rodriguez-a885a61a6/' target='_BLANK' >
-                                <i className="fa-brands fa-linkedin links "></i><span className='textRed' >Linkedin</span>
-                            </Link>
-                        </button>
-                        <button>
-                            <Link href='https://github.com/lewisv4' target='_BLANK'>
-                                <i className="fa-brands fa-github links"></i><span className='textRed' >Github</span>
-                            </Link>
-                        </button>
-                        
-                        <button>
-                            <Link href={'mailto:lewisv4re@hotmail.com'}>
-                                <i className="fa-solid fa-envelope links"></i><span className='textRed' >lewisv4re@hotmail.com</span>
-                            </Link>
-                        </button>
-
-
-                    </div>
-                    <div className='detailsPresentation' >
-                        <button onClick={downloadCv} id={theme} >
-                            {descarga.toUpperCase()}
-                            <i class="fa-regular fa-newspaper iconoCv"></i>
-                        </button>
-                        <button onClick={handlePreview} className='buttonPreview' id={theme} >
-                            {vistaPrevia.toUpperCase()}
-                            <i class="fa-regular fa-newspaper iconoCv"></i>
-                        </button>
-                       
-                    </div>
-                </article>
-
-                <article className='imagePresentation' >
-                    <Image src={photoPerfil} alt='Foto de perfil' id={theme} />
-                </article>
-            </section>
-        </div>
+        <div className='patherPresentation'>
+        <section className={`presentationContainer ${theme}`}>
+          <article className='namePresentation'>
+            <h1>
+              <span className='mensajeSaludo'>{saludo}</span><br />
+              Luis Carlos Rodriguez
+            </h1>
+            <h2>{text}</h2>
+            <p>{parrafo}</p>
+      
+            <div className='openAndRedes'>
+              <h6>{openToWork}</h6>
+              <button>
+                <Link href='https://api.whatsapp.com/send?phone=+573122401377' target='_BLANK'>
+                  <i className="fa-brands fa-whatsapp links"></i><span className='textRed'>+57 312 240 1377</span>
+                </Link>
+              </button>
+              <button>
+                <Link href='https://api.whatsapp.com/send?phone=+573502032217' target='_BLANK'>
+                  <i className="fa-brands fa-whatsapp links"></i><span className='textRed'>+57 350 203 2217</span>
+                </Link>
+              </button>
+              <button>
+                <Link href='https://www.linkedin.com/in/luis-carlos-rodriguez-a885a61a6/' target='_BLANK'>
+                  <i className="fa-brands fa-linkedin links"></i><span className='textRed'>Linkedin</span>
+                </Link>
+              </button>
+              <button>
+                <Link href='https://github.com/lewisv4' target='_BLANK'>
+                  <i className="fa-brands fa-github links"></i><span className='textRed'>Github</span>
+                </Link>
+              </button>
+              <button>
+                <Link href='mailto:lewisv4re@hotmail.com'>
+                  <i className="fa-solid fa-envelope links"></i><span className='textRed'>lewisv4re@hotmail.com</span>
+                </Link>
+              </button>
+            </div>
+      
+            <div className='detailsPresentation'>
+              <button onClick={downloadCv} id={theme}>
+                {descarga.toUpperCase()} <i className="fa-regular fa-newspaper iconoCv"></i>
+              </button>
+              <button onClick={handlePreview} className='buttonPreview' id={theme}>
+                {vistaPrevia.toUpperCase()} <i className="fa-regular fa-newspaper iconoCv"></i>
+              </button>
+            </div>
+          </article>
+      
+          <article className='imagePresentation'>
+            <Image src={photoPerfil} alt='Foto de perfil' id={theme} />
+          </article>
+        </section>
+      </div>
+      
     )
 }
 
