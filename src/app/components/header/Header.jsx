@@ -47,6 +47,8 @@ const Header = () => {
         <ul>
           <li className={getClassName('patherPresentation')} onClick={() => handleScroll('patherPresentation')}>{inicio}</li>
           <li className={getClassName('patherAbout')} onClick={() => handleScroll('patherAbout')}>{acerca}</li>
+          <li className={getClassName('experienceContainer')} onClick={() => handleScroll('experienceContainer')}>{proyectos}</li>
+          <li className={getClassName('stackContainer')} onClick={() => handleScroll('stackContainer')}>{contacto}</li>
           <li className={getClassName('projectsContainer')} onClick={() => handleScroll('projectsContainer')}>{proyectos}</li>
           <li className={getClassName('contactContainer')} onClick={() => handleScroll('contactContainer')}>{contacto}</li>
           <li onClick={fnChangeTheme}><MdOutlineWbSunny /></li>

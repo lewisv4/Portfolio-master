@@ -45,10 +45,10 @@ const Home = () => {
       <div id="patherAbout" className="pageSection">
         <About />
       </div>
-      <div id="patherAbout" className="pageSection">
+      <div id="experienceContainer" className="pageSection">
         <Experience />
       </div>
-      <div id="projectsContainer" className="pageSection">
+      <div id="stackContainer" className="pageSection">
         <Stack />
       </div>
       <div id="projectsContainer" className="pageSection">
