@@ -66,6 +66,16 @@ const Presentation = () => {
                             </Link>
                         </button>
                         <button>
+                            <Link href='https://api.whatsapp.com/send?phone=+573122401377' target='_BLANK' >
+                                <i className="fa-brands fa-whatsapp links "></i><span className='textRed' >+57 312 240 1377</span>
+                            </Link>
+                        </button>
+                        <button>
+                            <Link href='https://api.whatsapp.com/send?phone=+573502032217' target='_BLANK' >
+                                <i className="fa-brands fa-whatsapp links "></i><span className='textRed' >+57 350 203 2217</span>
+                            </Link>
+                        </button>
+                        <button>
                             <Link href={'mailto:lewisv4re@hotmail.com'}>
                                 <i className="fa-solid fa-envelope links"></i><span className='textRed' >lewisv4re@hotmail.com</span>
                             </Link>
@@ -82,16 +92,7 @@ const Presentation = () => {
                             {vistaPrevia.toUpperCase()}
                             <i class="fa-regular fa-newspaper iconoCv"></i>
                         </button>
-                        <button>
-                            <Link href='https://api.whatsapp.com/send?phone=+573122401377' target='_BLANK' >
-                                <i className="fa-brands fa-whatsapp links "></i><span className='textRed' >+57 312 240 1377</span>
-                            </Link>
-                        </button>
-                        <button>
-                            <Link href='https://api.whatsapp.com/send?phone=+573502032217' target='_BLANK' >
-                                <i className="fa-brands fa-whatsapp links "></i><span className='textRed' >+57 350 203 2217</span>
-                            </Link>
-                        </button>
+                       
                     </div>
                 </article>
 
