@@ -81,6 +81,11 @@ const Presentation = () => {
                   <i className="fa-solid fa-envelope links"></i><span className='textRed'>lewisv4re@hotmail.com</span>
                 </Link>
               </button>
+              <button>
+                <Link href='mailto:lewisv4re@gmail.com'>
+                  <i className="fa-solid fa-envelope links"></i><span className='textRed'>lewisv4re@gmail.com</span>
+                </Link>
+              </button>
             </div>
       
             <div className='detailsPresentation'>
