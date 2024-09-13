@@ -58,12 +58,12 @@ const Presentation = () => {
               <h6>{openToWork}</h6>
               <button>
                 <Link href='https://api.whatsapp.com/send?phone=573122401377' target='_BLANK'>
-                  <i className="fa-brands fa-whatsapp links"></i><span className='textRed'>+57 312-240-1377</span>
+                  <i className="fa-brands fa-whatsapp links"></i><span className='textRed'>+57 312 240 1377</span>
                 </Link>
               </button>
               <button>
                 <Link href='https://api.whatsapp.com/send?phone=573502032217' target='_BLANK'>
-                  <i className="fa-brands fa-whatsapp links"></i><span className='textRed'>+57 350-203-2217</span>
+                  <i className="fa-brands fa-whatsapp links"></i><span className='textRed'>+57 350 203 2217</span>
                 </Link>
               </button>
               <button>
