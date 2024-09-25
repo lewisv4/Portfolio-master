@@ -13,11 +13,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={nunito.className}>
-        <div style={{ textAlign: 'center', margin: '20px 0' }}>
+        {/* <div style={{ textAlign: 'center', margin: '20px 0' }}>
         <button id="pdfButton" style={{ padding: '10px 20px', fontSize: '16px', cursor: 'pointer' }}>
           Descargar Página Completa en PDF
         </button>
-      </div>
+      </div> */}
         <Header />
         {children}</body>
     </html>
