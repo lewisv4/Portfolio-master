@@ -9,33 +9,33 @@ import Footer from "./components/footer/Footer";
 import Stack from "./components/stack/Stack";
 
 const Home = () => {
-  useEffect(() => {
-    if (typeof window !== 'undefined') {
-      // Importar html2pdf solo en el cliente
-      const html2pdf = require('html2pdf.js');
+  // useEffect(() => {
+  //   if (typeof window !== 'undefined') {
+  //     // Importar html2pdf solo en el cliente
+  //     const html2pdf = require('html2pdf.js');
       
-      const handleDownloadPageAsPDF = () => {
-        const element = document.querySelector('.pageContent');
-        const opciones = {
-          margin: 0,
-          filename: 'Curriculum_Luis_Carlos_Rodriguez.pdf',
-          image: { type: 'png', quality: 1 },
-          html2canvas: {
-            scale: 10, // Aumentar la escala para mayor calidad
-            useCORS: true // Permite cargar imágenes desde otras fuentes si es necesario
-          },
-          jsPDF: {
-            unit: 'px', // Cambiar a 'px' para mantener la consistencia con el diseño de la pantalla
-            format: [element.scrollWidth, element.scrollHeight], // Ajustar al tamaño del contenido
-            orientation: 'portrait'
-          }
-        };
-        html2pdf().from(element).set(opciones).save();
-      }
+  //     const handleDownloadPageAsPDF = () => {
+  //       const element = document.querySelector('.pageContent');
+  //       const opciones = {
+  //         margin: 0,
+  //         filename: 'Curriculum_Luis_Carlos_Rodriguez.pdf',
+  //         image: { type: 'png', quality: 1 },
+  //         html2canvas: {
+  //           scale: 10, // Aumentar la escala para mayor calidad
+  //           useCORS: true // Permite cargar imágenes desde otras fuentes si es necesario
+  //         },
+  //         jsPDF: {
+  //           unit: 'px', // Cambiar a 'px' para mantener la consistencia con el diseño de la pantalla
+  //           format: [element.scrollWidth, element.scrollHeight], // Ajustar al tamaño del contenido
+  //           orientation: 'portrait'
+  //         }
+  //       };
+  //       html2pdf().from(element).set(opciones).save();
+  //     }
 
-      document.getElementById('pdfButton').addEventListener('click', handleDownloadPageAsPDF);
-    }
-  }, []);
+  //     document.getElementById('pdfButton').addEventListener('click', handleDownloadPageAsPDF);
+  //   }
+  // }, []);
 
   return (
     <>
