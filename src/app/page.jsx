@@ -7,7 +7,7 @@ import Projects from "./components/projects/Projects";
 import Contact from "./components/contacto/Contact";
 import Footer from "./components/footer/Footer";
 import Stack from "./components/stack/Stack";
-import 'assets/css/owl.css';
+// import 'assets/css/owl.css';
 
 const Home = () => {
   // useEffect(() => {
