@@ -7,6 +7,7 @@ import Projects from "./components/projects/Projects";
 import Contact from "./components/contacto/Contact";
 import Footer from "./components/footer/Footer";
 import Stack from "./components/stack/Stack";
+import 'assets/css/owl.css';
 
 const Home = () => {
   // useEffect(() => {
@@ -39,6 +40,7 @@ const Home = () => {
 
   return (
     <>
+    <link rel="stylesheet" href="assets/css/owl.css"></link>
       <div id="patherPresentation" className="pageSection">
         <Presentation />
       </div>
