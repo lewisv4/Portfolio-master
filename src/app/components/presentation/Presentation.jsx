@@ -95,9 +95,9 @@ const Presentation = () => {
               <button onClick={downloadCv} id={theme}>
                 {descarga.toUpperCase()} <i className="fa-regular fa-newspaper iconoCv"></i>
               </button>
-              <button onClick={handlePreview} className='buttonPreview' id={theme}>
+             <!--  <button onClick={handlePreview} className='buttonPreview' id={theme}>
                 {vistaPrevia.toUpperCase()} <i className="fa-regular fa-newspaper iconoCv"></i>
-              </button>
+              </button> -->
             </div>
           </article>
       
